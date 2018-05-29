@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "your description here",
   "scripts": {
-      "prestart": "babel-node build/startMessage.js",
-      "start": "npm-run-all --parallel security-check run-source-server",
-      "run-source-server": "node build/sourceServer.js",
-      "security-check": "nsp check",
-      "local-tunnel": "lt --port 4000",
-      "share": "npm-run-all --parallel run-source-server local-tunnel"
+    "prestart": "babel-node build/startMessage.js",
+    "start": "npm-run-all --parallel security-check run-source-server",
+    "run-source-server": "babel-node build/sourceServer.js",
+    "security-check": "nsp check",
+    "local-tunnel": "lt --port 4000",
+    "share": "npm-run-all --parallel run-source-server local-tunnel"
   },
   "author": "Jason Kraft",
   "license": "MIT",
